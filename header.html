@@ -1,0 +1,824 @@
+
+
+(function(){
+  var menujs = (function(){
+    /* 
+<input id="menu-toggle" type="checkbox">
+<label class="menu-icon" for="menu-toggle"></label>
+<div class="slideout-sidebar">
+<div class="foto_back">
+<div class="foto"><div style="position:relative;">
+<img src="https://drive.google.com/uc?export=download&amp;confirm=no_antivirus&amp;id=1yFay9O5bwQ4mqrNbMF6GK-aYV-iSmjcx">
+
+</div></div>
+<a style="font-weight:700;"><div style="position:relative;">
+HEEG.HTML free on-line store
+
+</div></a>
+
+<a href="mailto:info@heeg.ru"><div style="position:relative;">
+info@heeg.ru
+
+</div></a>
+
+<a><div style="position:relative;">
+Пластиковая посуда
+
+</div></a>
+</div>
+<label class="menu-icon" for="menu-toggle"></label>
+<p><div class="tc-search"><input class="mysearch" placeholder="Поиск..." type="search" value="">
+<button class="tc-btn-invisible start_search_bar">
+
+<a></a>
+</button>
+<button class="tc-btn-invisible empty_search">
+
+<a></a>
+</button>
+</div></p>
+<ul class="tc-toc">
+
+
+<li class="toc-item-selected expand" tit="index">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="index.html">Каталог</a>
+
+<ul class="tc-toc">
+
+
+<li class="toc-item-selected expand" tit="Innovatsionnye_izdeliya">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Innovatsionnye_izdeliya.html">Инновационные изделия</a>
+
+<ul class="tc-toc">
+
+
+<li class="toc-item-selected" tit="Kollektsiya_Silikonovye_formy">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Silikonovye_formy.html">Коллекция «Силиконовые формы»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Umnye_gadzhety">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Umnye_gadzhety.html">Умные гаджеты</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Umnye_izdeliya">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Umnye_izdeliya.html">Умные изделия</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Umnyj_kholodil'nik">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Umnyj_kholodil'nik.html">Умный холодильник</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected expand" tit="Klassika_Tupperware">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Klassika_Tupperware.html">Классика Tupperware</a>
+
+<ul class="tc-toc">
+
+
+<li class="toc-item-selected" tit="Kollektsiya_kukhonnykh_priborov_Disko">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_kukhonnykh_priborov_Disko.html">Коллекция кухонных приборов «Диско»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Kollektsiya_Universal">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Universal.html">Коллекция Universal</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Kompaktusy_Tupperware">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kompaktusy_Tupperware.html">Компактусы Tupperware</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Kontejnery_Svezhest'_i_Dykhanie">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kontejnery_Svezhest'_i_Dykhanie.html">Контейнеры «Свежесть» и «Дыхание»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Lanch-boksy_Tupperware">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Lanch-boksy_Tupperware.html">Ланч-боксы «Tupperware»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected expand" tit="Kollektsiya_Vsjo_dlya_vypechki">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Vsjo_dlya_vypechki.html">Коллекция «Всё для выпечки»</a>
+
+<ul class="tc-toc">
+
+
+<li class="toc-item-selected" tit="Kollektsiya_MikroKuk">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_MikroKuk.html">Коллекция «МикроКук»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Kollektsiya_Miks">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Miks.html">Коллекция «Микс»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Kollektsiya_Ocharovanie">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Ocharovanie.html">Коллекция «Очарование»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Kollektsiya_Okhlazhdayuschie_lotki">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Okhlazhdayuschie_lotki.html">Коллекция «Охлаждающие лотки»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected expand" tit="Servirovochnaya_kollektsiya">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Servirovochnaya_kollektsiya.html">Сервировочная коллекция</a>
+
+<ul class="tc-toc">
+
+
+<li class="toc-item-selected" tit="Kollektsiya_ECO">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_ECO.html">Коллекция ECO</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Kollektsiya_OT_SHEFA">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_OT_SHEFA.html">Коллекция «ОТ ШЕФА»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Kollektsiya_TermoTap">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_TermoTap.html">Коллекция «ТермоТап»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Kollektsiya_Ul'tra_Pro">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Ul'tra_Pro.html">Коллекция «Ультра Про»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="101_Mikro_Gurme">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="101_Mikro_Gurme.html">101 Микро Гурмэ</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Figures">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Figures.html">Фильтры на фигурах</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="Rolly">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Rolly.html">Суши и роллы</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="craft">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="craft.html">Товары с выбором параметров</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected expand" tit="more">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="more.html">Наша компания</a>
+
+<ul class="tc-toc">
+
+
+<li class="toc-item-selected" tit="education">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="education.html">О компании</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="contact_form">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="contact_form.html">Связаться с нами</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="uslugi">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="uslugi.html">Услуги</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+</ul>
+
+</li>
+
+
+
+<li class="toc-item-selected" tit="about_cms">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="about_cms.html">Оплата и доставка</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+
+
+</ul>
+</div>
+<div class="shop-top">
+<div class="fixed_cart"><b></b><div class="simpleCart_hide"> <a class="simpleCart_total"></a></div></div>
+<div class="menudecor"><div class="logo"><a class="tc-tiddlylink tc-tiddlylink-resolves" href="index.html"><div style="position:relative;">
+<img src="https://drive.google.com/uc?export=download&amp;confirm=no_antivirus&amp;id=1SfZfzqha2tBVS_QB7G41lIxk8fSFA9HN">
+
+</div></a></div>
+<div class="SiteTitle"><div style="position:relative;">
+Инновационная посуда из высокотехнологичных полимеров.
+
+</div></div>
+</div>
+  <aside id="aside1">
+<div class="sticky2" id="stick">
+<div class="sf-contener clearfix col-lg-12" id="block_top_menu ">
+<div class="tw-table-of-contents-top container">
+ <ul class="tc-toc">
+
+
+<input id="index" name="accordion-1" type="radio"><label for="index">
+<li class="toc-item-selected expand" tit="index">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="index.html"><b></b>Каталог</a>
+
+<ul class="tc-toc">
+
+
+<input id="Innovatsionnye_izdeliya" name="accordion-1" type="radio"><label for="Innovatsionnye_izdeliya">
+<li class="toc-item-selected expand" tit="Innovatsionnye_izdeliya">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Innovatsionnye_izdeliya.html"><b></b>Инновационные изделия</a>
+
+<ul class="tc-toc">
+
+
+<input id="Kollektsiya_Silikonovye_formy" name="accordion-1" type="radio"><label for="Kollektsiya_Silikonovye_formy">
+<li class="toc-item-selected" tit="Kollektsiya_Silikonovye_formy">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Silikonovye_formy.html"><b></b>Коллекция «Силиконовые формы»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Umnye_gadzhety" name="accordion-1" type="radio"><label for="Umnye_gadzhety">
+<li class="toc-item-selected" tit="Umnye_gadzhety">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Umnye_gadzhety.html"><b></b>Умные гаджеты</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Umnye_izdeliya" name="accordion-1" type="radio"><label for="Umnye_izdeliya">
+<li class="toc-item-selected" tit="Umnye_izdeliya">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Umnye_izdeliya.html"><b></b>Умные изделия</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Umnyj_kholodil'nik" name="accordion-1" type="radio"><label for="Umnyj_kholodil'nik">
+<li class="toc-item-selected" tit="Umnyj_kholodil'nik">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Umnyj_kholodil'nik.html"><b></b>Умный холодильник</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Klassika_Tupperware" name="accordion-1" type="radio"><label for="Klassika_Tupperware">
+<li class="toc-item-selected expand" tit="Klassika_Tupperware">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Klassika_Tupperware.html"><b></b>Классика Tupperware</a>
+
+<ul class="tc-toc">
+
+
+<input id="Kollektsiya_kukhonnykh_priborov_Disko" name="accordion-1" type="radio"><label for="Kollektsiya_kukhonnykh_priborov_Disko">
+<li class="toc-item-selected" tit="Kollektsiya_kukhonnykh_priborov_Disko">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_kukhonnykh_priborov_Disko.html"><b></b>Коллекция кухонных приборов «Диско»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Kollektsiya_Universal" name="accordion-1" type="radio"><label for="Kollektsiya_Universal">
+<li class="toc-item-selected" tit="Kollektsiya_Universal">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Universal.html"><b></b>Коллекция Universal</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Kompaktusy_Tupperware" name="accordion-1" type="radio"><label for="Kompaktusy_Tupperware">
+<li class="toc-item-selected" tit="Kompaktusy_Tupperware">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kompaktusy_Tupperware.html"><b></b>Компактусы Tupperware</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Kontejnery_Svezhest'_i_Dykhanie" name="accordion-1" type="radio"><label for="Kontejnery_Svezhest'_i_Dykhanie">
+<li class="toc-item-selected" tit="Kontejnery_Svezhest'_i_Dykhanie">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kontejnery_Svezhest'_i_Dykhanie.html"><b></b>Контейнеры «Свежесть» и «Дыхание»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Lanch-boksy_Tupperware" name="accordion-1" type="radio"><label for="Lanch-boksy_Tupperware">
+<li class="toc-item-selected" tit="Lanch-boksy_Tupperware">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Lanch-boksy_Tupperware.html"><b></b>Ланч-боксы «Tupperware»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Kollektsiya_Vsjo_dlya_vypechki" name="accordion-1" type="radio"><label for="Kollektsiya_Vsjo_dlya_vypechki">
+<li class="toc-item-selected expand" tit="Kollektsiya_Vsjo_dlya_vypechki">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Vsjo_dlya_vypechki.html"><b></b>Коллекция «Всё для выпечки»</a>
+
+<ul class="tc-toc">
+
+
+<input id="Kollektsiya_MikroKuk" name="accordion-1" type="radio"><label for="Kollektsiya_MikroKuk">
+<li class="toc-item-selected" tit="Kollektsiya_MikroKuk">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_MikroKuk.html"><b></b>Коллекция «МикроКук»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Kollektsiya_Miks" name="accordion-1" type="radio"><label for="Kollektsiya_Miks">
+<li class="toc-item-selected" tit="Kollektsiya_Miks">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Miks.html"><b></b>Коллекция «Микс»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Kollektsiya_Ocharovanie" name="accordion-1" type="radio"><label for="Kollektsiya_Ocharovanie">
+<li class="toc-item-selected" tit="Kollektsiya_Ocharovanie">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Ocharovanie.html"><b></b>Коллекция «Очарование»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Kollektsiya_Okhlazhdayuschie_lotki" name="accordion-1" type="radio"><label for="Kollektsiya_Okhlazhdayuschie_lotki">
+<li class="toc-item-selected" tit="Kollektsiya_Okhlazhdayuschie_lotki">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Okhlazhdayuschie_lotki.html"><b></b>Коллекция «Охлаждающие лотки»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Servirovochnaya_kollektsiya" name="accordion-1" type="radio"><label for="Servirovochnaya_kollektsiya">
+<li class="toc-item-selected expand" tit="Servirovochnaya_kollektsiya">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Servirovochnaya_kollektsiya.html"><b></b>Сервировочная коллекция</a>
+
+<ul class="tc-toc">
+
+
+<input id="Kollektsiya_ECO" name="accordion-1" type="radio"><label for="Kollektsiya_ECO">
+<li class="toc-item-selected" tit="Kollektsiya_ECO">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_ECO.html"><b></b>Коллекция ECO</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Kollektsiya_OT_SHEFA" name="accordion-1" type="radio"><label for="Kollektsiya_OT_SHEFA">
+<li class="toc-item-selected" tit="Kollektsiya_OT_SHEFA">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_OT_SHEFA.html"><b></b>Коллекция «ОТ ШЕФА»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Kollektsiya_TermoTap" name="accordion-1" type="radio"><label for="Kollektsiya_TermoTap">
+<li class="toc-item-selected" tit="Kollektsiya_TermoTap">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_TermoTap.html"><b></b>Коллекция «ТермоТап»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Kollektsiya_Ul'tra_Pro" name="accordion-1" type="radio"><label for="Kollektsiya_Ul'tra_Pro">
+<li class="toc-item-selected" tit="Kollektsiya_Ul'tra_Pro">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Kollektsiya_Ul'tra_Pro.html"><b></b>Коллекция «Ультра Про»</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="101_Mikro_Gurme" name="accordion-1" type="radio"><label for="101_Mikro_Gurme">
+<li class="toc-item-selected" tit="101_Mikro_Gurme">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="101_Mikro_Gurme.html"><b></b>101 Микро Гурмэ</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Figures" name="accordion-1" type="radio"><label for="Figures">
+<li class="toc-item-selected" tit="Figures">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Figures.html"><b></b>Фильтры на фигурах</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="Rolly" name="accordion-1" type="radio"><label for="Rolly">
+<li class="toc-item-selected" tit="Rolly">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="Rolly.html"><b></b>Суши и роллы</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="craft" name="accordion-1" type="radio"><label for="craft">
+<li class="toc-item-selected" tit="craft">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="craft.html"><b></b>Товары с выбором параметров</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="more" name="accordion-1" type="radio"><label for="more">
+<li class="toc-item-selected expand" tit="more">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="more.html"><b></b>Наша компания</a>
+
+<ul class="tc-toc">
+
+
+<input id="education" name="accordion-1" type="radio"><label for="education">
+<li class="toc-item-selected" tit="education">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="education.html"><b></b>О компании</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="contact_form" name="accordion-1" type="radio"><label for="contact_form">
+<li class="toc-item-selected" tit="contact_form">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="contact_form.html"><b></b>Связаться с нами</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="uslugi" name="accordion-1" type="radio"><label for="uslugi">
+<li class="toc-item-selected" tit="uslugi">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="uslugi.html"><b></b>Услуги</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+</ul>
+
+</li>
+</label>
+
+
+
+<input id="about_cms" name="accordion-1" type="radio"><label for="about_cms">
+<li class="toc-item-selected" tit="about_cms">
+<a class="tc-tiddlylink tc-tiddlylink-resolves" href="about_cms.html"><b></b>Оплата и доставка</a>
+
+<ul class="tc-toc">
+
+</ul>
+
+</li>
+</label>
+
+
+</ul> <b></b><div class="simpleCart_hide"> <a class="simpleCart_total"></a></div>
+</div></div></div>
+  </aside> 
+</div>
+ 
+ 
+
+
+<span class=" tc-reveal" hidden="true"></span>   
+  
+
+
+
+<span class=" tc-reveal" hidden="true"></span>
+    */
+  }).toString();
+  menujs = menujs.slice(menujs.indexOf('/*')+2, menujs.lastIndexOf('*/'));
+
+  document.write(menujs)
+}());
